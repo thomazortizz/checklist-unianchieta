@@ -1,0 +1,16 @@
+<div class="todo-container">
+  <div class="todo-form">
+    <app-new-task></app-new-task>
+  </div>
+  <div class="todo-list_container">
+    <div class="todo-list_todo">
+      <app-todo-item
+        *ngFor="let todo of todos"
+        [todo]="todo"
+      ></app-todo-item>
+    </div>
+  </div>
+  <div class="todo-buttons">
+    <button class="clear" (click)="clearAll()">Limpar</button>
+  </div>
+</div>

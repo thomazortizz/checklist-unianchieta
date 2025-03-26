@@ -1,0 +1,14 @@
+<div class="new-task">
+  <div class="new-task_input-container">
+    <input
+      id="new-task"
+      class="new-task_input"
+      type="text"
+      [(ngModel)]="newTaskTitle"
+      placeholder="Descrição"
+    />
+  </div>
+  <button class="new-task_button" (click)="addTask()">
+    <i class="fa fa-plus"></i>
+  </button>
+</div>
